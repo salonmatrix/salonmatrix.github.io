@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Le Havre Layers Primary';
+    font-weight: 400;
+    font-style: normal;
+    src: url('#{$font-path}lehavrelayers-primary.eot');
+    src: url('#{$font-path}lehavrelayers-primary.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}lehavrelayers-primary.woff2') format('woff2'),
+         url('#{$font-path}lehavrelayers-primary.woff') format('woff'),
+         url('#{$font-path}lehavrelayers-primary.ttf') format('truetype'),
+         url('#{$font-path}lehavrelayers-primary.svg#le_havre_lrsprimary') format('svg');
+}
+
+@font-face {
+    font-family: 'News Cycle';
+    font-weight: 400;
+    font-style: normal;
+    src: url('#{$font-path}news-cycle-regular.eot');
+    src: url('#{$font-path}news-cycle-regular.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}news-cycle-regular.woff2') format('woff2'),
+         url('#{$font-path}news-cycle-regular.woff') format('woff'),
+         url('#{$font-path}news-cycle-regular.ttf') format('truetype'),
+         url('#{$font-path}news-cycle-regular.svg#NewsCycle') format('svg');
+}
+
+@font-face {
+    font-family: 'News Cycle';
+    font-weight: 700;
+    font-style: normal;
+    src: url('#{$font-path}news-cycle-700.eot');
+    src: url('#{$font-path}news-cycle-700.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}news-cycle-700.woff2') format('woff2'),
+         url('#{$font-path}news-cycle-700.woff') format('woff'),
+         url('#{$font-path}news-cycle-700.ttf') format('truetype'),
+         url('#{$font-path}news-cycle-700.svg#NewsCycle') format('svg');
+}

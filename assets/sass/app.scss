@@ -1,0 +1,60 @@
+@import "variables";
+@import "fonts";
+@import "bootstrap";
+@import "forms";
+
+body {
+  padding-top: 90px;
+}
+
+.navbar {
+  font-size: 18px;
+  font-family: $font-family-sans-serif;
+  font-weight: $headings-font-weight;
+  min-height: 90px;
+
+  > .container .navbar-brand, > .container-fluid .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+.navbar-header {
+  text-align: center;
+  float: none;
+}
+
+.navbar-brand {
+  display: inline-block;
+  float: none;
+  font-family: $font-family-brand;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: $font-weight-brand;
+  padding: 30px 60px;
+  text-transform: none;
+  height: auto;
+}
+
+.badge {
+  padding-bottom: 4px;
+  vertical-align: 3px;
+  font-size: 10px;
+}
+
+.panel {
+  &-primary,
+  &-success,
+  &-warning,
+  &-danger,
+  &-info {
+    .panel-title {
+      color: #fff;
+    }
+  }
+}
+
+.intro-section {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+}

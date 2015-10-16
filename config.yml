@@ -1,0 +1,10 @@
+root: dist
+dest: '<%= site.root %>'
+
+assets: assets
+data: data
+templates: templates
+
+title: SalonMatrix
+tagline: 'Find your salon software'
+description: 'Compare Salon Software'
