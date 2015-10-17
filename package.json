@@ -14,9 +14,11 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-curl": "^2.2.0",
     "handlebars-helper-rel": "^0.1.2",
+    "iso-3166-2": "^0.2.1",
     "mocha": "^2.3.3",
     "mocha-clean": "^0.4.0",
-    "node-verifier-schema": "^1.1.5"
+    "node-verifier-schema": "^1.1.5",
+    "validator": "^4.1.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
