@@ -1,5 +1,5 @@
-root: dist
-dest: '<%= site.root %>'
+root: /
+dest: dist
 
 assets: assets
 data: data
@@ -8,3 +8,62 @@ templates: templates
 title: SalonMatrix
 tagline: 'Find your salon software'
 description: 'Compare Salon Software'
+
+front_features:
+  - key: appointments
+    name: 'Appointments'
+  - key: online_booking
+    name: 'Online Booking'
+  - key: pos
+    name: 'POS'
+  - key: inventory
+    name: 'Inventory'
+
+feature_groups:
+  - name: 'Clients'
+    features:
+      - key: appointments
+        name: 'Appointment Book'
+        front: 'Appointments'
+      - key: clients
+        name: 'Client Management'
+      - key: reminders
+        name: 'Appointment Reminders'
+      - key: recurring
+        name: 'Recurring Appointments'
+      - key: online_booking
+        name: 'Online Booking'
+      - key: marketing
+        name: 'Marketing'
+  - name: 'POS'
+    features:
+      - key: pos
+        name: 'POS'
+      - key: loyalty_program
+        name: 'Loyalty Program'
+      - key: giftcards
+        name: 'Gift Cards'
+  - name: 'Employees'
+    features:
+      - key: employees
+        name: 'Employee Management'
+      - key: scheduling
+        name: 'Shift Scheduling'
+      - key: payroll
+        name: 'Payroll'
+      - key: multi_user
+        name: 'Multi-User'
+  - name: 'Resources'
+    features:
+      - key: resources
+        name: 'Resource Management'
+      - key: booth_rental
+        name: 'Booth Rental'
+      - key: inventory
+        name: 'Inventory Mangement'
+  - name: 'Enterprise'
+    features:
+      - key: api
+        name: 'API'
+      - key: multi_location
+        name: 'Multi-Location'

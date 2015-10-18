@@ -8,16 +8,28 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         assets: '<%= site.dest %>/assets',
-        helpers: ['handlebars-helper-rel'],
+        helpers: ['handlebars-helper-rel', 'handlebars-helper-compose', '<%= site.templates %>/helpers/*.js'],
         partials: '<%= site.templates %>/partials/*.hbs',
         layoutdir: '<%= site.templates %>/layouts/',
         layoutext: '.hbs',
-        layout: 'content',
-        site: '<%= site %>',
+        data: ['<%= site.data %>/*.json', '<%= site.data %>/*.yml'],
+        site: '<%= site %>'
       },
       site: {
-        src: '<%= site.templates %>/*.hbs',
-        dest: '<%= site.dest %>/'
+        options: {
+          layout: 'content'
+        },
+        files: {
+          '<%= site.dest %>/': '<%= site.templates %>/*.hbs'
+        }
+      },
+      products: {
+        options: {
+          layout: 'product'
+        },
+        files: {
+          '<%= site.dest %>/products/': '<%= site.data %>/*.md'
+        }
       }
     },
     sass: {
@@ -76,7 +88,7 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       data: {
-        files: ['<%= site.data %>/*.yml'],
+        files: ['<%= site.data %>/**/*.*'],
         tasks: ['assemble']
       },
       assets: {

@@ -58,3 +58,33 @@ body {
   font-size: 20px;
   padding: 30px;
 }
+
+.product-toolbar {
+  float: right;
+  margin-top: 19px;
+}
+
+.feature-value {
+  width: 100px;
+  text-align: left;
+}
+
+.index-table {
+  table-layout: fixed;
+
+  .feature-value {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 130px;
+    text-align: center;
+  }
+
+  .feature-yes {
+    color: $brand-primary;
+  }
+
+  .feature-unknown {
+    color: $gray-lighter;
+  }
+}

@@ -56,6 +56,7 @@ var verifier = schema.create().object(function () {
     this.optional('clients', ['nullable_boolean']);
     this.optional('marketing', ['nullable_boolean']);
     this.optional('employees', ['nullable_boolean']);
+    this.optional('giftcards', ['nullable_boolean']);
     this.optional('inventory', ['nullable_boolean']);
     this.optional('loyalty_program', ['nullable_boolean']);
     this.optional('multi_location', ['nullable_boolean']);
