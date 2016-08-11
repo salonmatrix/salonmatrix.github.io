@@ -1,28 +1,30 @@
 ---
 name: 'Salonized'
-website: 'https://www.salonized.com/salon'
+website: 'https://www.salonized.com/'
 vendor:
   name: 'Salonized'
-  website: 'http://www.salonized.com/'
+  website: 'https://www.salonized.com/'
   founded: 2013
   country: NL
 deployment:
   installed: false
   web: true
 free_trial: true
-pricing: 'from $19.00/month'
+pricing: 'from $29.00/month'
 features:
   appointments: true
   clients: true
   employees: true
-  giftcards: false
+  giftcards: true
   inventory: true
-  loyalty_program: false
+  loyalty_program: true
   marketing: true
   multi_location: false
+  online_booking: true
   payroll: false
   pos: true
   recurring: false
   reminders: true
   resources: true
+  api: false
 ---
